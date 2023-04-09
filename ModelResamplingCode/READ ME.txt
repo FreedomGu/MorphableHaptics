@@ -1,0 +1,18 @@
+The files in this folder create models for all materials at the desired sampling rate.
+
+Run:
+
+CreateResampledModels(Fs_mod)
+ -- Fs_mod is the new sampling rate in Hz (must be less than 10,000 Hz)
+ -- This function reads and parses the XML files for models at 10,000 Hz. Then the models are resampled at the new sampling rate. XML files are then created for all materials and stored in a new sub-folder in the main "Models" folder. HTML files are also created and stored to help visualize the new models.
+
+
+Local functions:
+
+readValueXML(xDoc,elementName) -- reads in a single value from the model XML file
+
+readArrayXML(xDoc,elementName) -- reads in an array of values from the model XML file
+
+resampleModels(model_info_orig,Fs_orig,Fs_mod) -- takes in the parsed model information, the original sampling rate (10,000 Hz), and the desired sampling rate. Returns the model information of the downsampled models.
+
+modelXSL_createHTML -- style sheet to create an HTML file for each model XML file
