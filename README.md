@@ -3,7 +3,7 @@
 
 
 
-The "modeling.py" file in this repository generates AR features based on force and speed inputs (force: 0-2, speed: 0-200), using 100 pre-defined haptic textures. The alpha parameter can be adjusted to create different haptic textures. A target texture can also be provided for debugging purposes. The target texture can be compressed and then reconstructed using PCA to test the effectiveness of the PCA method. If PCA works correctly, the alpha parameter can be adjusted to modify the texture (AR features) of the target texture.
+The ```modeling.py``` file in this repository generates AR features based on force and speed inputs (force: 0-2, speed: 0-200), using 100 pre-defined haptic textures. The alpha parameter can be adjusted to create different haptic textures. A target texture can also be provided for debugging purposes. The target texture can be compressed and then reconstructed using PCA to test the effectiveness of the PCA method. If PCA works correctly, the alpha parameter can be adjusted to modify the texture (AR features) of the target texture.
 
 To use this program, simply run the "modeling.py" script and provide the force and speed inputs. You can also adjust the alpha parameter to create different haptic textures. A target texture can be provided to test the effectiveness of PCA compression and reconstruction. Please note that the code is written in Python and requires the ```scikit-learn``` library.
 
