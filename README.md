@@ -1,0 +1,2 @@
+# MorphableHaptics
+ The Morphable Haptics Texture based on PCA is a GitHub repository that contains code and datasets related to haptic texture modeling and synthesis using Principal Component Analysis (PCA). The repository provides an implementation of the PCA-based approach for modeling and synthesizing haptic textures, which can be used for haptic feedback in various applications such as virtual reality and robotics.
